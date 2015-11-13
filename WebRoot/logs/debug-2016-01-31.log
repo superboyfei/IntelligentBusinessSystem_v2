@@ -1,5 +1,0 @@
-2016-01-31 23:58:47.467 [InitializeListener.java:28][localhost-startStop-1][DEBUG] - 开始执行初始化任务
-2016-01-31 23:58:48.390 [ServerinfoService.java:43][localhost-startStop-1][DEBUG] - 服务器第一次启动时间：2015-03-20 17:44:54.0
-2016-01-31 23:58:48.567 [MsgReceiver.java:64][localhost-startStop-1][DEBUG] - 启动设备数据监听，监听端口：3131
-2016-01-31 23:58:48.809 [MsgReceiver.java:97][localhost-startStop-1][DEBUG] - 启动柜台数据监听，监听端口：5151
-2016-01-31 23:58:48.928 [FtpServerListener.java:47][localhost-startStop-1][DEBUG] - 启动FtpServer

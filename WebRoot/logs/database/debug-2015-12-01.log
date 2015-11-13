@@ -1,4 +1,0 @@
-2015-12-01 00:00:00.032 [Slf4jLogFilter.java:134][pool-2-thread-1][DEBUG] - {conn-10020, pstmt-20011, rs-50010} query executed. 1.01172 millis. 
-select outlets0_.outlets_id as outlets_1_20_, outlets0_.outlets_app as outlets_2_20_, outlets0_.outlets_code as outlets_3_20_, outlets0_.outlets_description as outlets_4_20_, outlets0_.outlets_isparent as outlets_5_20_, outlets0_.outlets_name as outlets_6_20_, outlets0_.outlets_parentid as outlets_7_20_, outlets0_.outlets_recordcode as outlets_8_20_, outlets0_.outlets_sortid as outlets_9_20_ from ibs_outlets outlets0_ order by outlets0_.outlets_sortid
-2015-12-01 00:00:01.506 [Slf4jLogFilter.java:134][pool-2-thread-1][DEBUG] - {conn-10020, pstmt-20009} update executed. effort 0. 1438.256273 millis. 
-CALL PROC_BUSINESSRECORD_MONTH_PARTITION()
