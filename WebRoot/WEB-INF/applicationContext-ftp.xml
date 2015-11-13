@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server
+	xmlns="http://mina.apache.org/ftpserver/spring/v1"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd 
+    http://mina.apache.org/ftpserver/spring/v1 http://mina.apache.org/ftpserver/ftpserver-1.0.xsd"
+      	
+	id="ibsFtpServer"
+	
+    max-logins="256"
+    anon-enabled="false"
+    max-login-failures="5"
+    login-failure-delay="500">
+    
+    <!--
+    	最大并发用户数
+    	是否允许匿名登录
+    	连接关闭前登录失败后尝试次数
+    	登录失败后的时间延迟（ms）
+     -->
+	
+	<listeners>
+		<nio-listener name="default" port="21" >
+			<data-connection>
+	            <passive />
+	            <!-- ftp被动主动模式 -->
+	            <!-- <passive external-address="xxx.xxx.xxx.xxx(服务器地址)"/> -->
+	        </data-connection>
+		</nio-listener>
+	</listeners>
+	
+	<ftplets>
+		<ftplet name="ftplet">
+			<beans:bean class="com.centerm.network.ftp.IbsFtplet" />
+		</ftplet>
+	</ftplets>
+</server>

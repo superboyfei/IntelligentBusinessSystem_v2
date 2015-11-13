@@ -1,0 +1,172 @@
+@CHARSET "UTF-8";
+body{
+	margin:0px;
+	padding:0px;
+	background:url("../images/Bg.jpg");
+	background-size:cover;
+	font-family: "Microsoft Yahei";
+	font-size:14px;
+	overflow:hidden;
+	
+}
+input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus {
+    box-shadow:0 0 0 60px #fff inset;
+    -webkit-text-fill-color: #333;
+}
+ul,li{margin: 0px; padding: 0px; list-style: none;}
+.login_wrap{position: relative;
+	width:480px;
+	height:470px;
+	margin: 0px auto;
+	margin-top: 80px;
+ }
+.login{ 
+	width:480px;
+	height:470px;
+	/*background:url("../images/loginBg.png") 100%;*/
+}
+.login_note{
+	margin: 0 12px 10px 12px;
+	width: 356px;
+	color: #f70000;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.input_div .hit1{  background: url("../images/login_user_bak2.png");} 
+.input_div .hit2{  background: url("../images/login_pass_bak2.png");} 
+.login_in{
+	margin:0 50px;
+	padding: 50px 0;
+}
+.input_div{margin: 0 12px;}
+.login_btn{
+	  background: #e96400;
+	  background: linear-gradient(top,  #ff7107,  #e96400);
+	  background: -ms-linear-gradient(top,  #ff7107,  #e96400);
+	  background: -webkit-gradient(linear, left top, left bottom, from(#ff7107), to(#e96400));
+	  background: -moz-linear-gradient(top,  #ff7107,  #e96400);
+	  border-radius: 5px;
+	  font-size: 18px;
+	  margin: 0px 12px; 
+	  color: #fff;
+	  text-align: center;
+	  width: 320px;
+	  height: 42px;
+	  line-height: 42px;
+	  border: 0px;
+  }
+.login_btn:hover{
+	  background: #fa6e05;
+	  background: linear-gradient(top,  #ff8429,  #fa6e05);
+	  background: -ms-linear-gradient(top,  #ff8429,  #fa6e05);
+	  background: -webkit-gradient(linear, left top, left bottom, from(#ff8429), to(#fa6e05));
+	  background: -moz-linear-gradient(top,  #ff8429,  #fa6e05);
+	  border-radius: 5px;
+	  font-size: 18px;
+	  margin: 0px 12px; 
+	  color: #fff;
+	  text-align: center;
+	  width: 320px;
+	  height: 42px;
+	  line-height: 42px;
+	  border: 0px;
+  }
+ .login_btn:active{
+	  background: #ff7107;
+	  background: linear-gradient(top,  #e96400,  #ff7107);
+	  background: -ms-linear-gradient(top,  #e96400,  #ff7107);
+	  background: -webkit-gradient(linear, left top, left bottom, from(#e96400), to(#ff7107));
+	  background: -moz-linear-gradient(top,  #e96400,  #ff7107);
+	  border-radius: 5px;
+	  font-size: 18px;
+	  margin: 0px 12px; 
+	  color: #fff;
+	  text-align: center;
+	  width: 320px;
+	  height: 42px;
+	  line-height: 42px;
+	  border: 0px;
+  }
+  .loading{
+	background: #c25505;
+	  border-radius: 5px;
+	  font-size: 18px;
+	  margin: 0px 12px; 
+	  color: #f7cbaa;
+	  text-align: center;
+	  width: 320px;
+	  height: 42px;
+	  line-height: 42px;
+	  border: 0px;
+
+  }
+  .loading:hover{
+	background: #c25505;
+	  border-radius: 5px;
+	  font-size: 18px;
+	  margin: 0px 12px; 
+	  color: #f7cbaa;
+	  text-align: center;
+	  width: 320px;
+	  height: 42px;
+	  line-height: 42px;
+	  border: 0px;
+  }
+
+ .disabled,.disabled:hover,.disabled:active{
+ 	 background: #e5e5e5;
+ 	 color: #bcbcbc;
+ }
+.login_user{ width: 320px;height: 42px; background: url("../images/login_user_bak.png"); margin: 12px 0; position: relative;}
+.login_pass{width: 320px;height: 42px; background: url("../images/login_pass_bak.png");margin: 12px 0;position: relative;}
+.login_user input,.login_pass input{ 
+	background: none; 
+	outline:none;
+	border: none; 
+	width: 268px;
+	height: 42px; 
+	font-size: 20px; 
+	margin-left: 50px; 
+	line-height: 42px;
+    border-radius: 5px;
+}
+
+.note{
+	color:rgba(0,0,0,0.3);
+	color:#b9b9b9!important;
+	width:320px;
+	height:42px;	
+	left:50px;
+	top:1px;
+	line-height: 40px;
+	position:absolute;
+	z-index:1;
+	font-size: 14px;
+	text-align:left;
+}
+.copyright{
+
+	width:480px;
+	color: #f5fafc;
+	margin: 0 auto;
+	/*text-align: center;*/
+}
+.download {
+    font-size: 14px;
+    /* width: 480px; */
+    margin: 0 auto;
+    /* margin-top: -200px; */
+    /* text-align: center; */
+    color: #fff;
+    height: 90px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.download a{
+	color: #eee;
+}
+.download a:hover{
+	color: #4d9eb3;
+}

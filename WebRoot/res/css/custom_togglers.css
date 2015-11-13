@@ -1,0 +1,7 @@
+
+ .ui-layout-toggler-open, .ui-layout-toggler-west-open{
+	background: url(../images/left_arrow_bak.png);
+}
+.ui-layout-toggler-closed,.ui-layout-toggler-west-closed{
+	background: url(../images/right_arrow_bak.png);
+}

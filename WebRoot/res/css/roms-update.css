@@ -1,0 +1,46 @@
+.center-tool-bar{position: fixed; top: 0px;}
+.roms-holder{ margin-top: 50px;}
+.roms-update-list{
+	margin: 10px 20px;
+	padding: 10px 40px;
+	border-bottom: 1px #cfcfcf solid;
+	position: relative;
+	color: #999;
+}
+.roms-update-list .glyphicon{
+	padding-right: 5px;
+}
+.roms-update-list h4{
+	color: #333;
+}
+.roms-update-list strong{
+	color: #333;
+}
+.rom-version-date>span{
+	padding-right: 20px;
+}
+.roms-update-list .rom-infro{
+	max-height: 90px;
+	overflow: hidden;
+	padding-right: 100px;
+	word-wrap: break-word;
+    word-break: break-all;
+    font-size: 14px;
+    line-height: 22px;
+}
+.roms-update-list .rom-infro p{
+	line-height: 14px;
+}
+.remove-btn{
+	position: absolute;
+	right: 60px;
+	top:30px;
+	line-height: 20px;
+}
+.remove-btn .glyphicon{ 
+	font-size: 24px;
+}
+
+}
+.dl-horizontal dt{width: 132px;color: #333;}
+.dl-horizontal dd{margin-left: 156px; color: #999;}

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="off" monitorInterval="30">	<!-- 不打印log4j内部日志，配置文件刷新频率为30秒 -->
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd HH:mm:ss} %l-[%level] - %m%n</Pattern>
+			</PatternLayout>
+		</Console>
+		
+		<RollingRandomAccessFile name="logfile" fileName="${web:rootDir}/logs/debug.log" filePattern="${web:rootDir}/logs/debug-%date{yyyy-MM-dd}.log">
+			<PatternLayout>
+				<Pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%file:%line][%thread][%level] - %message%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+			</Policies>
+		</RollingRandomAccessFile>
+		
+		<RollingRandomAccessFile name="dblogfile" fileName="${web:rootDir}/logs/database/debug.log" filePattern="${web:rootDir}/logs/database/debug-%date{yyyy-MM-dd}.log">
+			<PatternLayout>
+				<Pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%file:%line][%thread][%level] - %message%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+			</Policies>
+		</RollingRandomAccessFile>
+	</Appenders>
+	<Loggers>	<!-- 打印等级：off、fatal、error、warn、info、debug、trace、all -->
+		<Logger name="druid.sql.Statement" level="debug">
+			<appender-ref ref="dblogfile" />
+		</Logger>
+		<Logger name="com.centerm" level="debug">
+			<appender-ref ref="console" />
+			<appender-ref ref="logfile" />
+		</Logger>
+		<Root level="off">
+		</Root>
+	</Loggers>
+</Configuration>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="off" monitorInterval="30">	<!-- 不打印log4j内部日志，配置文件刷新频率为30秒 -->
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout>
+				<Pattern>%l-%m%n</Pattern>
+			</PatternLayout>
+		</Console>
+	</Appenders>
+	<Loggers>	<!-- 打印等级：off、fatal、error、warn、info、debug、trace、all -->
+		<Logger name="com.centerm" level="debug">
+			<appender-ref ref="console" />
+		</Logger>
+		<Root level="off">
+		</Root>
+	</Loggers>
+</Configuration>
